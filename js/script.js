@@ -10,6 +10,7 @@ var typed = new Typed('#skills', {
 
 // Change Nav Bg-Color On scroll 
 const navBar = document.querySelector('.navbar');
+const homeSection = document.querySelector('#home');
 document.addEventListener('scroll', () => {
     if(window.scrollY > 0) {
         navBar.classList.add('scrollbg');
@@ -57,7 +58,7 @@ var swiper = new Swiper(".slide-content", {
 // scroll to top button 
 let span = document.querySelector(".top");
 
-window.addEventListener('scroll',function () {
+window.addEventListener('scroll', () => {
     if (this.scrollY >= 300) {
         span.classList.add("show");
     } else {
@@ -71,14 +72,24 @@ span.addEventListener('click', () => {
     });
 })
 
+
+// Progress bar width 
+let aboutSec = document.getElementById("about");
+let progresBars = document.querySelectorAll('.progress-bar')
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= aboutSec.offsetTop - 150) {
+        progresBars.forEach((prog) => {
+            prog.style.width = prog.dataset.width;
+        })
+    }
+})
 // status counter 
 let nums = document.querySelectorAll('.num');
 let workStatus = document.getElementById('status');
 let started = false;
 let duration = 2000;
 
-
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', () => {
     if(window.scrollY >= workStatus.offsetTop - 300){
         if(!started) {
             nums.forEach((num) => {
@@ -116,3 +127,11 @@ function startCount(el) {
 
     requestAnimationFrame(updateCount); // Start the animation
 }
+
+// AOS Animation 
+AOS.init({
+    once: true,
+    duration: 800,
+    offset: 200,
+    easing: 'ease-in-out',
+});
