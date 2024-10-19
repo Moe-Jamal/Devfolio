@@ -249,7 +249,7 @@ h4 {
 
     nav .navbar-nav {
         background-color: white;
-        min-height: calc(100vh - 5.3125rem);
+        height: calc(100vh - 5.3125rem);
         overflow-y: auto;
     }
 
@@ -257,13 +257,12 @@ h4 {
         color: #444 !important;
     }
 }
-
 @media (max-width: 576px) {
     nav .navbar-collapse {
         left: .625rem;
             right: .625rem;
     }
-
+    
 }
 
 /* end nav-bar  */
