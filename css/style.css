@@ -26,7 +26,11 @@ h3,
 h4 {
     font-family: var(--heading-font);
 }
-
+.unfix-ios-bg {
+    @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
+}
 /* end global variables */
 /* start Scroll Bar  */
 ::-webkit-scrollbar {
