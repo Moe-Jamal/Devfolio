@@ -305,6 +305,7 @@ h4 {
 /* start about section */
 #about {
     padding: var(--main-padding);
+    scroll-margin-top: 2.5rem;
 }
 
 #about .progress-bar {
@@ -340,6 +341,7 @@ h4 {
 /* start resume section  */
 #resume {
     padding: var(--main-padding);
+    scroll-margin-top: 2.5rem;
 }
 
 #resume h3 {
@@ -394,6 +396,7 @@ h4 {
 /* start services section */
 #services {
     padding: var(--main-padding);
+    scroll-margin-top: 2.5rem;
 }
 
 #services .serv .serv-container {
@@ -441,6 +444,7 @@ h4 {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    scroll-margin-top: 2.5rem;
 }
 
 #status span:first-child {
@@ -478,7 +482,7 @@ h4 {
 /* start portfolio section */
 #portfolio {
     padding: var(--main-padding);
-    overflow: hidden;
+    scroll-margin-top: 2.5rem;
 }
 
 #portfolio ul li button {
@@ -529,6 +533,7 @@ h4 {
 /* start pricing section */
 #price {
     padding: var(--main-padding);
+    scroll-margin-top: 2.5rem;
 }
 
 #price .price-item {
@@ -554,6 +559,7 @@ h4 {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    scroll-margin-top: 2.5rem;
 }
 
 #testimonials .card {
@@ -619,6 +625,7 @@ h4 {
 /* start blog section  */
 #blog {
     padding: var(--main-padding);
+    scroll-margin-top: 2.5rem;
 }
 
 #blog .card {

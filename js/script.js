@@ -8,16 +8,25 @@ var typed = new Typed('#skills', {
     smartBackspace: true,
 });
 
+// AOS Animation 
+AOS.init({
+    once: true,
+    duration: 800,
+    offset: 200,
+    easing: 'ease-in-out',
+});
+
 // Change Nav Bg-Color On scroll 
 const navBar = document.querySelector('.navbar');
-const homeSection = document.querySelector('#home');
-document.addEventListener('scroll', () => {
-    if(window.scrollY > 0) {
+function navChangeBG() {
+    if (window.scrollY > 0) {
         navBar.classList.add('scrollbg');
     } else {
         navBar.classList.remove('scrollbg');
     }
-})
+}
+document.addEventListener('scroll', navChangeBG);
+document.addEventListener('DOMContentLoaded', navChangeBG);
 
 // deep menu mobile 
 const menuButton = document.querySelector(".deep-drop");
@@ -31,10 +40,15 @@ menuButton.addEventListener("click", (event) => {
 
 // portfolio filter
 const filterCards = document.querySelector(".card-list")
-const mixer = mixitup(filterCards, {
+const  mixer = mixitup(filterCards, {
     selectors: {
         target: '.mix'
     },
+    callbacks: {
+        onMixEnd: function() {
+            AOS.refresh();  // Recalculate positions for AOS animations
+        }
+    }
 });
 
 // testimonials slider 
@@ -128,10 +142,13 @@ function startCount(el) {
     requestAnimationFrame(updateCount); // Start the animation
 }
 
-// AOS Animation 
-AOS.init({
-    once: true,
-    duration: 800,
-    offset: 200,
-    easing: 'ease-in-out',
-});
+// close NavBar in mobile 
+
+const navLinks = document.querySelectorAll(".navbar-nav .main-Link");
+const mobileNav = document.querySelector(".navbar-collapse");
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('show')
+    })
+})
