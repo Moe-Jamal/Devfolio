@@ -10,6 +10,7 @@
     --default-font: "Roboto", system-ui;
     --heading-font: "Raleway", sans-serif;
     --nav-font: "Poppins", sans-serif;
+    --bs-modal-bg: "transparent";
 }
 
 html {
@@ -26,11 +27,7 @@ h3,
 h4 {
     font-family: var(--heading-font);
 }
-.unfix-ios-bg {
-    @supports (-webkit-touch-callout: none) {
-        background-attachment: initial !important;
-    }
-}
+
 /* end global variables */
 /* start Scroll Bar  */
 ::-webkit-scrollbar {
@@ -534,6 +531,9 @@ h4 {
 }
 
 /* end portfolio section */
+/* Start gallery slider  */
+
+/* end gallery slider  */
 /* start pricing section */
 #price {
     padding: var(--main-padding);
@@ -634,6 +634,7 @@ h4 {
 
 #blog .card {
     box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 #blog .card .caption span {
@@ -681,6 +682,19 @@ h4 {
 }
 
 /* end blog section  */
+.modal-footer button {
+    background-color: var(--main-coler);
+}
+
+.modal-footer button:hover {
+    background-color: var(--hover-coler);
+}
+
+@media (min-width: 992px) {
+    .modal-body .img-holder img {
+        width: 800px !important;
+    }
+}
 /* start contact section */
 #contact {
     padding: var(--main-padding);

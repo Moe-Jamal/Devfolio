@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Devfolio is your digital up-to-date resume. Showcase to the world your skills, links to your social profile, where you have worked and what you have worked on.">
     <title>Devfolio</title>
     <!-- Page Logo -->
     <link rel="shortcut icon" href="image/myLogo.jpg">
@@ -383,10 +385,10 @@
                     </li>
                 </ul>
                 <div class="row row-gap-4 card-list justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="col-lg-4 col-md-6 mix app" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="col-lg-4 col-md-6 mix app">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-1.jpg" class="w-100" alt="portfolio-1">
+                                <img src="./image/port-1.jpg" class="w-100 gallery-item" alt="portfolio-1" data-index="0">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -400,7 +402,7 @@
                     <div class="col-lg-4 col-md-6 mix product">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-2.jpg" class="w-100" alt="portfolio-2">
+                                <img src="./image/port-2.jpg" class="w-100 gallery-item" alt="portfolio-2" data-index="1">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -414,7 +416,7 @@
                     <div class="col-lg-4 col-md-6 mix branding">
                         <div class="cards ">
                             <div class="img-holder">
-                                <img src="./image/port-3.jpg" class="w-100" alt="portfolio-3">
+                                <img src="./image/port-3.jpg" class="w-100 gallery-item" alt="portfolio-3" data-index="2">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -428,7 +430,7 @@
                     <div class="col-lg-4 col-md-6 mix books">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-4.jpg" class="w-100" alt="portfolio-4">
+                                <img src="./image/port-4.jpg" class="w-100 gallery-item" alt="portfolio-4" data-index="3">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -442,7 +444,7 @@
                     <div class="col-lg-4 col-md-6  mix app">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-5.jpg" class="w-100" alt="portfolio-5">
+                                <img src="./image/port-5.jpg" class="w-100 gallery-item" alt="portfolio-5" data-index="4">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -456,7 +458,7 @@
                     <div class="col-lg-4 col-md-6  mix product">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-6.jpg" class="w-100" alt="portfolio-6">
+                                <img src="./image/port-6.jpg" class="w-100 gallery-item" alt="portfolio-6" data-index="5">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -470,7 +472,7 @@
                     <div class="col-lg-4 col-md-6  mix branding">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-7.jpg" class="w-100" alt="portfolio-7">
+                                <img src="./image/port-7.jpg" class="w-100 gallery-item" alt="portfolio-7" data-index="6">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -484,7 +486,7 @@
                     <div class="col-lg-4 col-md-6  mix books">
                         <div class="cards">
                             <div class="img-holder">
-                                <img src="./image/port-8.jpg" class="w-100" alt="portfolio-8">
+                                <img src="./image/port-8.jpg" class="w-100 gallery-item" alt="portfolio-8" data-index="7">
                             </div>
                             <div class="caption d-flex align-items-center justify-content-between p-3">
                                 <div class="info">
@@ -548,23 +550,6 @@
                                     <span><span>Web Design</span> / 18 Sep. 2018</span>
                                 </div>
                                 <i class="fa-solid fa-circle-plus fa-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>
@@ -757,7 +742,7 @@
                 </div>
                 <div class="row row-gap-4">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
-                        <div class="card rounded-top-2">
+                        <div class="card rounded-top-2" data-bs-toggle="modal" data-bs-target="#Blog-1">
                             <div class="img-holder">
                                 <img src="./image/post-1.jpg" class="w-100 rounded-top-2" alt="Blog-1">
                             </div>
@@ -780,7 +765,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-                        <div class="card rounded-top-2">
+                        <div class="card rounded-top-2" data-bs-toggle="modal" data-bs-target="#Blog-2">
                             <div class="img-holder">
                                 <img src="./image/post-2.jpg" class="w-100 rounded-top-2" alt="Blog-2">
                             </div>
@@ -803,7 +788,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="card rounded-top-2">
+                        <div class="card rounded-top-2" data-bs-toggle="modal" data-bs-target="#Blog-3">
                             <div class="img-holder">
                                 <img src="./image/post-3.jpg" class="w-100 rounded-top-2" alt="Blog-3">
                             </div>
@@ -823,6 +808,161 @@
                                     <span>10 min</span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Blog-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-3" id="exampleModalLabel">Travel</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="img-holder mb-3 text-center">
+                                <img src="./image/post-1.jpg" class="img-fluid" alt="blog-1">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, autem fuga.
+                                Maxime minus optio
+                                blanditiis fugiat consequatur voluptate iste aperiam nulla! Blanditiis repudiandae, quis
+                                mollitia
+                                quas, consectetur officia qui ratione numquam recusandae, quaerat laudantium odit ipsam magnam
+                                eligendi eveniet accusamus nam hic nihil reprehenderit quam repellendus magni provident autem
+                                aut.
+                                Et corrupti maxime saepe culpa quidem hic sapiente, excepturi voluptate dicta deleniti dolorum
+                                magni
+                                eius! Rem ipsam, deserunt vitae assumenda error eos numquam laborum repudiandae cum non fuga
+                                dicta
+                                amet. Esse beatae nam excepturi nobis omnis quo. Nulla, nostrum exercitationem quas asperiores
+                                accusantium repellat. Adipisci laboriosam distinctio exercitationem optio dolores assumenda
+                                laudantium sed sequi? Vel, quo aliquid, ea corrupti nemo, tempora cum sint necessitatibus odio
+                                pariatur culpa suscipit? Dicta dolores error et at necessitatibus quae quod velit consectetur
+                                eaque
+                                accusantium animi, delectus vel nostrum quos aliquam perferendis eum atque in cum sunt sed
+                                consequatur ad accusamus fugiat! Consectetur culpa minima, reprehenderit error alias perferendis
+                                dolor illum fugiat. Deleniti consequatur accusantium, dicta suscipit molestiae beatae rem
+                                nostrum
+                                repellat odit sint aliquam sequi iusto possimus minima. Magni quibusdam dolor ipsum quos
+                                inventore
+                                exercitationem harum beatae voluptatibus veritatis laudantium recusandae sequi maxime, obcaecati
+                                modi iste architecto quaerat, perferendis nesciunt blanditiis adipisci magnam, minima
+                                repellendus
+                                eius! Unde quo repellendus similique perferendis magnam error dolore aut dolorem sequi, aliquid
+                                consequatur quaerat. Mollitia laboriosam magnam adipisci quae saepe! Illum, ipsam, non laborum
+                                praesentium aperiam excepturi facilis consequatur sapiente obcaecati magnam quos. Iusto eum
+                                dolor
+                                veritatis voluptate officia architecto in, mollitia nesciunt possimus id laborum. Quam, quia
+                                delectus veritatis autem molestias omnis exercitationem facere laboriosam fugit illo quidem
+                                quisquam
+                                consectetur incidunt ipsum eveniet distinctio quae sit necessitatibus eos! Sequi inventore quod
+                                debitis quos natus ipsam ipsa corrupti magnam. Sapiente nobis molestias itaque error! Quae
+                                accusamus
+                                aspernatur necessitatibus qui velit aliquid eveniet recusandae unde doloremque at nisi
+                                asperiores a
+                                placeat iusto aut optio voluptatem voluptates id illum, nesciunt maiores. Corrupti aliquid
+                                facere
+                                officia, cumque quas accusamus unde dicta ipsam delectus inventore explicabo, maiores blanditiis
+                                distinctio enim? Nobis officia similique aliquid dignissimos accusantium? Pariatur, id quidem
+                                dignissimos exercitationem minima recusandae odit. Qui quos reprehenderit placeat. Ratione,
+                                velit
+                                cupiditate eligendi, officia neque qui odit tenetur suscipit, iure quam eveniet dignissimos
+                                voluptas
+                                earum omnis similique repudiandae debitis modi reprehenderit porro quae! Nulla non molestiae ab
+                                voluptas laborum! Eum animi dolores quis veritatis rerum ad minus optio nam voluptatum omnis
+                                possimus impedit iste sint a molestias facere similique, blanditiis ab ea. Distinctio ab
+                                molestiae
+                                corporis amet ratione labore exercitationem cum pariatur necessitatibus possimus sed fuga quidem
+                                recusandae a, deleniti repellat illo ad! Soluta animi rerum, nostrum omnis sint repudiandae
+                                temporibus dolores corporis quam reiciendis quaerat labore alias laboriosam exercitationem qui
+                                pariatur ex voluptates quia, facilis aliquid autem aut. Nostrum id rem cumque omnis odit ipsam?
+                                Asperiores, obcaecati. Totam nemo dolor, iure praesentium sequi quisquam sint consequuntur
+                                facilis
+                                ipsa ea nobis mollitia laudantium, perspiciatis ut, veritatis soluta incidunt obcaecati quis
+                                quos
+                                dolore? Doloribus sint ab tempora, earum similique iusto officia temporibus, velit consequatur
+                                consectetur aliquam beatae, laboriosam eos omnis nisi error ducimus quidem?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary border-0" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Blog-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-3" id="exampleModalLabel">Food</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="img-holder mb-3 text-center">
+                                <img src="./image/post-2.jpg" class="img-fluid" alt="blog-2">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, autem fuga. Maxime minus optio
+                                blanditiis fugiat consequatur voluptate iste aperiam nulla! Blanditiis repudiandae, quis mollitia
+                                quas, consectetur officia qui ratione numquam recusandae, quaerat laudantium odit ipsam magnam
+                                eligendi eveniet accusamus nam hic nihil reprehenderit quam repellendus magni provident autem aut.
+                                Et corrupti maxime saepe culpa quidem hic sapiente, excepturi voluptate dicta deleniti dolorum magni
+                                eius! Rem ipsam, deserunt vitae assumenda error eos numquam laborum repudiandae cum non fuga dicta
+                                amet. Esse beatae nam excepturi nobis omnis quo. Nulla, nostrum exercitationem quas asperiores
+                                accusantium repellat. Adipisci laboriosam distinctio exercitationem optio dolores assumenda
+                                laudantium sed sequi? Vel, quo aliquid, ea corrupti nemo, tempora cum sint necessitatibus odio
+                                pariatur culpa suscipit? Dicta dolores error et at necessitatibus quae quod velit consectetur eaque
+                                accusantium animi, delectus vel nostrum quos aliquam perferendis eum atque in cum sunt sed
+                                consequatur ad accusamus fugiat! Consectetur culpa minima, reprehenderit error alias perferendis
+                                dolor illum fugiat. Deleniti consequatur accusantium, dicta suscipit molestiae beatae rem nostrum
+                                repellat odit sint aliquam sequi iusto possimus minima. Magni quibusdam dolor ipsum quos inventore
+                                exercitationem harum beatae voluptatibus veritatis laudantium recusandae sequi maxime, obcaecati
+                                modi iste architecto quaerat, perferendis nesciunt blanditiis adipisci magnam, minima repellendus
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary border-0" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Blog-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-3" id="exampleModalLabel">Web Design</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="img-holder mb-3 text-center">
+                                <img src="./image/post-3.jpg" class="img-fluid" alt="blog-3">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, autem fuga. Maxime minus optio
+                                blanditiis fugiat consequatur voluptate iste aperiam nulla! Blanditiis repudiandae, quis mollitia
+                                quas, consectetur officia qui ratione numquam recusandae, quaerat laudantium odit ipsam magnam
+                                eligendi eveniet accusamus nam hic nihil reprehenderit quam repellendus magni provident autem aut.
+                                Et corrupti maxime saepe culpa quidem hic sapiente, excepturi voluptate dicta deleniti dolorum magni
+                                eius! Rem ipsam, deserunt vitae assumenda error eos numquam laborum repudiandae cum non fuga dicta
+                                amet. Esse beatae nam excepturi nobis omnis quo. Nulla, nostrum exercitationem quas asperiores
+                                accusantium repellat. Adipisci laboriosam distinctio exercitationem optio dolores assumenda
+                                laudantium sed sequi? Vel, quo aliquid, ea corrupti nemo, tempora cum sint necessitatibus odio
+                                pariatur culpa suscipit? Dicta dolores error et at necessitatibus quae quod velit consectetur eaque
+                                accusantium animi, delectus vel nostrum quos aliquam perferendis eum atque in cum sunt sed
+                                consequatur ad accusamus fugiat! Consectetur culpa minima, reprehenderit error alias perferendis
+                                dolor illum fugiat. Deleniti consequatur accusantium, dicta suscipit molestiae beatae rem nostrum
+                                repellat odit sint aliquam sequi iusto possimus minima. Magni quibusdam dolor ipsum quos inventore
+                                exercitationem harum beatae voluptatibus veritatis laudantium recusandae sequi maxime, obcaecati
+                                modi iste architecto quaerat, perferendis nesciunt blanditiis adipisci magnam, minima repellendus
+                                eius! Unde quo repellendus similique perferendis magnam error dolore aut dolorem sequi, aliquid
+                                consequatur quaerat. Mollitia laboriosam magnam adipisci quae saepe! Illum, ipsam, non laborum
+                                praesentium aperiam excepturi facilis consequatur sapiente obcaecati magnam quos. Iusto eum dolor
+                                veritatis voluptate officia architecto in, mollitia nesciunt possimus id laborum. Quam, quia
+                                delectus veritatis autem molestias omnis exercitationem facere laboriosam fugit illo quidem quisquam
+                                consectetur incidunt ipsum eveniet distinctio quae sit necessitatibus eos! Sequi inventore quod
+                                debitis quos natus ipsam ipsa corrupti magnam. Sapiente nobis molestias itaque error! Quae accusamus
+                                aspernatur necessitatibus qui velit aliquid eveniet recusandae unde doloremque at nisi asperiores a
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary border-0" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
