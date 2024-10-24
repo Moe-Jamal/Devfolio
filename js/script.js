@@ -152,3 +152,20 @@ navLinks.forEach(link => {
         mobileNav.classList.remove('show')
     })
 })
+
+// Control Portfolio Slider
+const galleryItems = document.querySelectorAll('.gallery-item');
+const portfolioModal = document.getElementById('portfolioModal');
+const carouselPortfolio = document.getElementById('carouselPortfolio');
+
+// Initialize Bootstrap 5 Modal and Carousel instances
+const modal = new bootstrap.Modal(portfolioModal);
+const carousel = new bootstrap.Carousel(carouselPortfolio);
+
+galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        modal.show();
+        // Set the carousel to start from the clicked item
+        carousel.to(index);
+    });
+});
